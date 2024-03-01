@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Marvel",sans-serif;
+}
+
+body{
+
+}
+ul{
+    list-style: none;
+}
+.but{
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px 25px;
+    font-size: 18px;
+    border-radius: 25px;
+    transition: ease-in-out all 1s ;
+    background-color: rgb(152, 29, 30);
+    color: white;
+    &:hover{
+        background-color: transparent ;
+        color: darkorchid;
+        
+    }
+
+}
+a{
+    text-decoration: none;
+}
+hr{
+        width: 60px;
+        height: 3px;
+        background-color: rgba(255, 0, 0, 0.582);
+        border: none;
+        margin: 10px 0;
+}
+
+#head{
+    width: 100%;
+    height: 60%;
+}
+.main-nav{
+    padding: 10px;
+    background-color: rgb(24, 26, 27);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .left-nav{
+        margin-left: 20px;
+    }
+    .left-nav a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+        transition: 0.5s;
+        &:hover{
+            
+            color: red;
+            border-bottom: solid 2px red;
+        }
+    }
+    .left-nav  i{
+        color: red;
+        font-size: 29px;
+        margin-left: 50px;
+        cursor: pointer;
+    }
+    .cen-nav .logo{
+        max-width: 80%;
+        margin: auto;
+        /* background-color: black; */
+    }
+    .cen-nav .logo img{
+       
+        max-width: 250px;
+        
+    }
+    .cen-nav ul{
+        display: flex;
+
+
+    }
+    .cen-nav ul a{
+        text-decoration: none;
+        text-transform: uppercase;
+        margin: 0 15px;
+        font-weight: 500;
+        color: white;
+       
+    transition: all 1s ease-in-out;
+    &:hover{
+        transition: 0.5s;
+        color: red;
+        border-bottom: solid 2px red;
+    }
+    }
+
+  
+    .r-nav{
+        margin-right: 40px;
+    }
+    .r-nav i{
+        color: white;
+        font-size: 25px;
+        
+        cursor: pointer;
+        margin-left: 38px;
+        transition: 0.5s;
+        &:hover{
+         
+            color: red;
+            
+        }
+    }
+}
+#head{
+    .welcome{
+    background: linear-gradient(to right,#000111ad 30%,#00000054),url(../img/covwallpaperflare.com_wallpaper.jpg) no-repeat center center/cover;
+    background-size: cover;
+    background-attachment:scroll;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 3s ease-in-out all;
+  
+   
+    }
+    .text-tx{
+        width: 80%;
+        margin: auto;
+        color: white;
+        font-weight: 700;
+        h3{
+            font-size: 40px;
+            text-transform: uppercase;
+           
+        }
+      
+        h2{
+            font-size: 30px;
+            text-transform: uppercase;
+            
+            
+    
+        }
+       
+        p{
+            max-width: 800px;
+            margin: 16px 0;
+            font-size: 25px;
+            letter-spacing: 1px;
+            line-height: 1.5;
+
+        }
+        a{
+            margin: 0 10px;
+        }
+    }
+
+}
+#head:hover .welcome{
+    background: linear-gradient(to right,#01022d60 30%,transparent ),url(../img/covwallpaperflare.com_wallpaper.jpg)
+}
+/*  */
+
+#info{
+    
+    padding: 16px;
+    margin: auto;
+    background-color: rgba(169, 169, 169, 0.253);
+    .row{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 19px;
+        
+    }
+    .col{
+        margin-left: 13px;
+
+    h2{
+        padding: 15px;
+        color: rgba(255, 0, 0, 0.377);
+        text-shadow: 0 2px 1px #4206a3, 
+        -1px 3px 1px #a53704, 
+        -2px 5px 1px #dd074e;
+        font-size: 45px;
+        animation: move infinite 10s alternate  ;
+    }
+    p{
+        
+            max-width: 800px;
+            margin: 16px 0;
+            font-size: 18px;
+            line-height: 1.5;
+    
+}
+    }
+.inf .im img{
+    border-radius: 20%;
+}
+}
+/*  */
+
+#movies{
+
+padding: 16px;
+margin: auto;
+ display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap; 
+background-image: url(../img/honey-yanibel-minaya-cruz-w95BkIgqkqY-unsplash.jpg);
+background-position:  top;
+background-repeat: no-repeat;
+
+
+.title{
+    width: 90%;
+    height: 90%;
+    padding: 10px;
+    margin-left: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .title-l{
+        p{
+            font-size: 14px;
+            font-weight: 600;
+            color: red;
+    
+        }
+        h1{
+            font-size: 40px;
+            font-weight: 800;
+            color: white;
+    
+        }
+    }
+    .title-r{
+        a{
+            
+            color: rgba(255, 255, 255, 0.74);
+            margin-left: 5px;
+            background-color: rgb(231, 11, 11);
+            padding: 10px;
+            border-radius: 50px;
+            border: solid black 2px;
+            transition: 0.5s;
+            &:hover{
+                background-color: transparent;
+                color: red;
+            }
+        }
+    }
+
+}
+
+}
+.card{
+    margin-top: 20px;
+    margin-left: 30px;
+    position: relative;
+    overflow: hidden ;
+    width: 300px;
+    height: 450px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+ .poster{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+
+    }
+}
+.overflow{
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 25px 25px 32px;
+    background-color: rgba(0, 0, 0, 0.185);
+    backdrop-filter: blur(16px);
+    transition: 1s ease-in-out;
+    h1{
+        text-transform: uppercase;
+        color: darkmagenta;
+        font-size: 19px;
+    }
+    a{
+        font-size: 25px;    
+        border-radius: 15%;
+        padding: 10px;
+        color: yellow;
+        transition: 0.5s all ease-in-out;
+        &:hover{
+            color: blue;
+
+        }
+    }
+    
+}
+.card:hover .overflow{
+    bottom: 0;
+}
+
+/*  */
+
+#games{
+
+padding: 16px;
+margin: auto;
+ display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap; 
+background-image: url(../img/backg.jpg);
+background-position: right top;
+background-repeat: no-repeat;
+position: relative;
+z-index: 1;
+.title{
+    width: 90%;
+    height: 90%;
+    padding: 10px;
+    margin-left: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .title-l{
+        p{
+            font-size: 14px;
+            font-weight: 600;
+            color: red;
+    
+        }
+        h1{
+            font-size: 40px;
+            font-weight: 800;
+            color: white;
+    
+        }
+    }
+    .title-r{
+        a{
+            
+            color: rgba(255, 255, 255, 0.74);
+            margin-left: 5px;
+            background-color: rgb(231, 11, 11);
+            padding: 10px;
+            border-radius: 50px;
+            border: solid black 2px;
+            transition: 0.5s;
+            &:hover{
+                background-color: transparent;
+                color: red;
+            }
+        }
+    }
+
+}
+}
+#games::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: -1;
+    background-color: rgba(110, 2, 110, 0.329);
+}
+#games .overflow a{
+    color: black;
+    transition: 0.5s all ease-in-out;
+    &:hover{
+        color: blue;
+    }
+}
+/*  */
+
+#contact{
+    
+    height: auto;
+    padding: 16px;
+    margin: auto;
+    background-color: #FFFFFF;
+    background-color: #FFFFFF;
+    background: linear-gradient(45deg, #FFFFFF 0%, #6284FF 50%, #FF0000 100%)  no-repeat center center / cover;
+    
+    height: 100vh;
+
+.headline{
+    h1,h2 {
+        
+        font-weight: 800;
+        
+    }
+    h1{
+        text-shadow: 0 2px 1px #4206a3, 
+        -1px 3px 1px #a53704, 
+        -2px 5px 1px #dd074e;
+        font-size: 60px;
+        cursor: pointer;
+        transition: 0.5s all ease-in;
+        animation: move infinite 10s alternate  ;
+        &:hover{
+            text-shadow: 0 2px 1px transparent;
+         
+        }
+    }
+    h2{
+        font-size: 40px;
+        text-align: center;
+        width: 600px;
+        margin: auto;
+        border-bottom: 3px red dotted; 
+    }
+
+    p{
+        font-size: 16px;
+        max-width: 500px;
+        margin: auto;
+        margin-top: 18px;
+        color: white;
+    }
+ 
+}
+.row{
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
+.control{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px ;
+    margin-bottom: 20px;
+    margin-top: 32px;
+}
+
+img{
+    justify-content: end;
+    max-width: 45%;
+   
+}
+input,select,textarea{
+    padding: 15px;
+    width: 100%;
+    color: #FF0000;
+    outline-color:fuchsia ;
+    border: 1px solid darkmagenta;
+    border-radius: 15px;
+    resize: none;
+    
+}
+
+
+}
+#contact .headline ::selection{
+    color: #4206a3;
+}
+/*  */
+
+#foot{
+    background-color: rgb(30, 30, 31);
+ 
+    height: auto;
+    padding: 10px;
+    margin: auto;
+    color: #FFFFFF;
+    .foot{
+        padding: 16px;
+    }
+    .row{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    h2{
+        font-size: 22px;
+        font-weight: 700;
+    }
+    .iconz{
+        margin-top: 20px;
+        a i{
+            font-size: 25px;
+            width: 35px;
+            height: 35px;
+            color: darkorchid;
+            /* border: 0.5px solid white;
+            border-radius: 40%; */
+            margin-left: 16px;
+            text-align: center;
+            line-height: 1.5;
+            transition: all 0.5s ease-in;
+            &:hover{
+                background-color: transparent;
+                color: white;
+            }
+            
+        }
+    }
+    .col-2{
+        margin: 10px 10px;
+    }
+
+    a{
+        color: rgb(255, 255, 255);
+        transition: all 0.5s linear ;
+        &:hover{
+            color: blue;
+        }
+    }
+
+    
+}
+#foot .copy-right {
+    /* background-color: #6284FF; */
+      a{
+        font-size: 15px;
+        transition: 0.5s all linear;
+        &:hover{
+           
+            color: blue;
+        }
+      }
+    .nav-foot ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+        
+        
+    }
+}
+/* an */
+
+
+
+
+/*  */
+
+@keyframes move{
+
+    0%{
+        
+        color: #4206a3;
+    }
+
+    50%{
+        text-shadow: 0 2px 1px #005fec, 
+        -1px 3px 1px #03000a, 
+        -2px 5px 1px #c46a04b4;
+        
+    }
+
+    75%{
+        
+        text-shadow: 0 2px 1px #332e31, 
+        -1px 3px 1px #280aad50, 
+        -2px 5px 1px #0d3831;
+    }
+}
+
+/* END */
